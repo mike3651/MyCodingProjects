@@ -1,3 +1,7 @@
+// Michael Wilson
+// Graphing Side project
+// The intent of this project is to create a visualization of various graphic algorithms
+
 import java.awt.*;
 
 public class Node implements Comparable<Node> {

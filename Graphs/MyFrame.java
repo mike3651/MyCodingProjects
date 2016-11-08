@@ -1,5 +1,6 @@
 // Michael Wilson
-// CSE - algorithms
+// Graphing Side project
+// The intent of this project is to create a visualization of various graphic algorithms
 
 // library for frame and components
 import javax.swing.*;

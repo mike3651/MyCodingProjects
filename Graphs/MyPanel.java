@@ -1,3 +1,7 @@
+// Michael Wilson
+// Graphing Side project
+// The intent of this project is to create a visualization of various graphic algorithms
+
 // this is for the panel
 import javax.swing.*;
 
