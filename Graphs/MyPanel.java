@@ -2,6 +2,8 @@
 // Graphing Side project
 // The intent of this project is to create a visualization of various graphic algorithms
 
+// START DATE: 11/7/2016
+
 // this is for the panel
 import javax.swing.*;
 
@@ -11,6 +13,7 @@ import java.awt.*;
 // using this library to temporarily debug the program
 import java.util.*;
 
+// class that contains the contents of the graph
 public class MyPanel extends JPanel {
 
    // This will keep track of the animation speed
@@ -33,17 +36,28 @@ public class MyPanel extends JPanel {
    private int y;
    
    // stepper that keeps track of how far into an algorithm we have stepped
-   private int stepper = 0;
+   private int stepper;
+
+   // stack that is used for DFS && DFSStep --> will probably remove this later
+   // down the road when I start to refactor the code. For now I'm just cramming 
+   // out a lot to see the functionality.    
+   private Stack<Node> myStack; 
    
-   private Stack<Node> myStack = new Stack<>();       
+   
+   // doing a quick set up here of elements that don't have 
+   // to be set up in the constructor
+   {
+      stepper = 0;
+      myStack = new Stack<>();
+      x = y = 10;
+   }      
 
    public MyPanel(int frameW, int frameH, Graph graph) {
       super();
       setBackground(Color.GREEN);
       panelWidth = frameW;
       panelHeight = frameH;
-      myGraph = graph;
-      x = y = 10;
+      myGraph = graph;      
    }   
    
    public void paintComponent(Graphics g) {

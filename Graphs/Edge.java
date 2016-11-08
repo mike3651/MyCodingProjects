@@ -2,10 +2,12 @@
 // Graphing Side project
 // The intent of this project is to create a visualization of various graphic algorithms
 
+// START DATE: 11/7/2016
 
 import java.awt.*;
 import java.util.*;
 
+// class that links to vertices together
 public class Edge implements Comparable<Edge> {
    private Node first;
    private Node second;

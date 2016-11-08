@@ -2,12 +2,16 @@
 // Graphing Side project
 // The intent of this project is to create a visualization of various graphic algorithms
 
+// START DATE: 11/7/2016
+
 // library for frame and components
 import javax.swing.*;
 
 // library for shapes
 import java.awt.*;
 
+// This class deals with setting up the actual
+// layout of the GUI
 public class MyFrame extends JFrame {
    // creates a new toolkit
    private Toolkit myKit = Toolkit.getDefaultToolkit();
@@ -16,6 +20,7 @@ public class MyFrame extends JFrame {
     
    private MyPanel myPanel;
    
+   // constructor to get things kicked off
    public MyFrame(Graph graph) {
       super();
       

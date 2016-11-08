@@ -2,8 +2,11 @@
 // Graphing Side project
 // The intent of this project is to create a visualization of various graphic algorithms
 
+// START DATE: 11/7/2016
+
 import java.awt.*;
 
+// really should have made this class vertex, oh well
 public class Node implements Comparable<Node> {
    private char name;
    

@@ -2,8 +2,12 @@
 // Graphing Side project
 // The intent of this project is to create a visualization of various graphic algorithms
 
+// START DATE: 11/7/2016
+
 import java.util.*;
 
+// class that kicks off the whole program and constructs
+// a list of vertices and a set of edges
 public class GUIClient {    
    private static List<Node> myVertices;
    
@@ -13,6 +17,7 @@ public class GUIClient {
    // random variable to be used throughout several different methods
    private static Random rand;
    
+   // method that gets the whole program running 
    public static void main(final String[] theArgs) {
       rand = new Random();
       myVertices = new ArrayList<Node>();
@@ -47,6 +52,7 @@ public class GUIClient {
    }   
    
    // method that chooses a random vertex
+   // RT: bad
    private static Node randomVertex() {   
       while(true) {
          Node vertex = myVertices.get(rand.nextInt(myVertices.size()));
@@ -57,6 +63,9 @@ public class GUIClient {
    
    
    // method that adds a random weight
+   // will improve this method a bit because
+   // at the moment it is fairly useless and just takes up more lines
+   // this comment is longer than the method haha
    private static int randomWeight() {
       return rand.nextInt(1000) + 1;
    }
